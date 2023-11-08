@@ -102,7 +102,7 @@ if __name__ == "__main__":
     last_validation_accuracy = 0
     train_list,val_list,loss_list = [],[],[]
 
-    while not stopping_condition and epoch < args.epochs:
+    while not stopping_condition:
         random.shuffle(train_data)
         model.train()
         # You will need further code to operationalize training, ffnn.py may be helpful
